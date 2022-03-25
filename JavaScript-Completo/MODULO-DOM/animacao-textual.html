@@ -1,0 +1,124 @@
+<html>
+    <body>
+        <style>
+            .conteudo h2 span {
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .conteudo p {
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+            .mostrar {
+                height: 150px !important;
+            }
+        </style>
+        <div class="conteudo">
+            <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tempus odio. 
+                Duis tellus diam, venenatis non feugiat quis, porta sit amet augue. 
+                Etiam et risus placerat est accumsan rutrum. Etiam dolor turpis, faucibus a rhoncus in, elementum pretium lectus. 
+                Integer dictum ante tellus, vel tristique enim convallis nec. 
+                Phasellus hendrerit nibh et purus feugiat gravida. Ut lectus lacus, auctor eget sem non, ultrices viverra enim. 
+                Pellentesque vehicula diam odio, quis elementum dolor feugiat id. 
+                Vestibulum tincidunt nisi non augue sagittis, ac finibus enim posuere. 
+                Aliquam lorem urna, dapibus nec risus sit amet, suscipit feugiat magna. 
+                Nunc sodales pellentesque metus id dignissim.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tempus odio. 
+                Duis tellus diam, venenatis non feugiat quis, porta sit amet augue. 
+                Etiam et risus placerat est accumsan rutrum. Etiam dolor turpis, faucibus a rhoncus in, elementum pretium lectus. 
+                Integer dictum ante tellus, vel tristique enim convallis nec. 
+                Phasellus hendrerit nibh et purus feugiat gravida. Ut lectus lacus, auctor eget sem non, ultrices viverra enim. 
+                Pellentesque vehicula diam odio, quis elementum dolor feugiat id. 
+                Vestibulum tincidunt nisi non augue sagittis, ac finibus enim posuere. 
+                Aliquam lorem urna, dapibus nec risus sit amet, suscipit feugiat magna. 
+                Nunc sodales pellentesque metus id dignissim.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tempus odio. 
+                Duis tellus diam, venenatis non feugiat quis, porta sit amet augue. 
+                Etiam et risus placerat est accumsan rutrum. Etiam dolor turpis, faucibus a rhoncus in, elementum pretium lectus. 
+                Integer dictum ante tellus, vel tristique enim convallis nec. 
+                Phasellus hendrerit nibh et purus feugiat gravida. Ut lectus lacus, auctor eget sem non, ultrices viverra enim. 
+                Pellentesque vehicula diam odio, quis elementum dolor feugiat id. 
+                Vestibulum tincidunt nisi non augue sagittis, ac finibus enim posuere. 
+                Aliquam lorem urna, dapibus nec risus sit amet, suscipit feugiat magna. 
+                Nunc sodales pellentesque metus id dignissim.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteúdo <span>Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tempus odio. 
+                Duis tellus diam, venenatis non feugiat quis, porta sit amet augue. 
+                Etiam et risus placerat est accumsan rutrum. Etiam dolor turpis, faucibus a rhoncus in, elementum pretium lectus. 
+                Integer dictum ante tellus, vel tristique enim convallis nec. 
+                Phasellus hendrerit nibh et purus feugiat gravida. Ut lectus lacus, auctor eget sem non, ultrices viverra enim. 
+                Pellentesque vehicula diam odio, quis elementum dolor feugiat id. 
+                Vestibulum tincidunt nisi non augue sagittis, ac finibus enim posuere. 
+                Aliquam lorem urna, dapibus nec risus sit amet, suscipit feugiat magna. 
+                Nunc sodales pellentesque metus id dignissim.</p>
+        </div>
+
+
+
+        <script>
+            var span = document.querySelectorAll('.conteudo span')[0];
+
+            span.addEventListener('click',function(){
+                var conteudo = document.querySelectorAll('.conteudo p')[0];
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'Ver mais!';
+                    conteudo.classList.remove('mostrar');
+                }else {
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                }
+            })
+            var span = document.querySelectorAll('.conteudo span')[1];
+
+            span.addEventListener('click',function(){
+                var conteudo = document.querySelectorAll('.conteudo p')[1];
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'Ver mais!';
+                    conteudo.classList.remove('mostrar');
+                }else {
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                }
+            })
+            var span = document.querySelectorAll('.conteudo span')[2];
+
+            span.addEventListener('click',function(){
+                var conteudo = document.querySelectorAll('.conteudo p')[2];
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'Ver mais!';
+                    conteudo.classList.remove('mostrar');
+                }else {
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                }
+            })
+            var span = document.querySelectorAll('.conteudo span')[3];
+
+            span.addEventListener('click',function(){
+                var conteudo = document.querySelectorAll('.conteudo p')[3];
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'Ver mais!';
+                    conteudo.classList.remove('mostrar');
+                }else {
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                }
+            })
+
+        </script>
+    </body>
+</html>
